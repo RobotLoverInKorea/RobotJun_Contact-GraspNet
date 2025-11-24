@@ -42,21 +42,26 @@ GDINO_DIR = pathlib.Path(groundingdino.__file__).parent
 GROUNDING_DINO_CONFIG = str(GDINO_DIR / "config" / "GroundingDINO_SwinT_OGC.py")
 
  터미널 설치
+ ```
 conda activate grdsam2
 cd ~/RobotJun/Grounded-SAM-2
 rm -rf GroundingDINO
 git clone https://github.com/IDEA-Research/GroundingDINO.git
 cd GroundingDINO
+```
 
  컴파일러/경로
+ ```
 export CC=gcc-10
 export CXX=g++-10
 //torch 2.5.1+cu121이면 가급적 CUDA 12.1 툴킷
 export CUDA_HOME=/usr/local/cuda-12.1  # 시스템에 맞게 조정
 //nvcc 확인: nvcc --version
+```
 
 
 설치 확인
+```
 python setup.py clean
 python setup.py build_ext --inplace
 python setup.py install
@@ -67,6 +72,8 @@ from groundingdino.models.GroundingDINO import ms_deform_attn
 print("pkg:", pathlib.Path(groundingdino.__file__).parent)
 print("has _C:", hasattr(ms_deform_attn, "_C"))
 PY
+
+```
 
 ---
 + contact graspnet pytorch 환경구성
