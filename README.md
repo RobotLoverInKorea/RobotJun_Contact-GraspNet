@@ -1,5 +1,6 @@
 # RobotJun_Contact-GraspNet
 RobotJun 에서 기본 시작을 한다. grounded sam2 모델 이후 contact graspnet 파지점 추출을 나타낸다.
+기존 작성자 : <https://www.notion.so/SAM-27641346ff5c80cb9d43e4fa4e7b4eb5>
 
 ---
 + Grounded-SAM2 환경 구성
