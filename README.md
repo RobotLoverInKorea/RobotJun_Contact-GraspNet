@@ -29,32 +29,32 @@ NameError: name '_C' is not defined
 지금 에러는 여전히 로컬 트리(grounding_dino/...)의 미빌드 코드를 불러오고 있어서 생긴 것
 _C(C++/CUDA 확장)가 없는 소스를 불러오니 NameError: _C가 계속 뜸
 
-# ✗ 지우기
-# from grounding_dino.groundingdino.util.inference import load_model, load_image, predict
-# GROUNDING_DINO_CONFIG = "grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+ ✗ 지우기
+ from grounding_dino.groundingdino.util.inference import load_model, load_image, predict
+ GROUNDING_DINO_CONFIG = "grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
 
-# ✓ 설치된 패키지 사용
+ ✓ 설치된 패키지 사용
 from groundingdino.util.inference import load_model, load_image, predict
 import pathlib, groundingdino
 GDINO_DIR = pathlib.Path(groundingdino.__file__).parent
 GROUNDING_DINO_CONFIG = str(GDINO_DIR / "config" / "GroundingDINO_SwinT_OGC.py")
 
-# 터미널 설치
+ 터미널 설치
 conda activate grdsam2
 cd ~/RobotJun/Grounded-SAM-2
 rm -rf GroundingDINO
 git clone https://github.com/IDEA-Research/GroundingDINO.git
 cd GroundingDINO
 
-# 컴파일러/경로
+ 컴파일러/경로
 export CC=gcc-10
 export CXX=g++-10
-# torch 2.5.1+cu121이면 가급적 CUDA 12.1 툴킷
+//torch 2.5.1+cu121이면 가급적 CUDA 12.1 툴킷
 export CUDA_HOME=/usr/local/cuda-12.1  # 시스템에 맞게 조정
-# nvcc 확인: nvcc --version
+//nvcc 확인: nvcc --version
 
 
-#설치 확인
+설치 확인
 python setup.py clean
 python setup.py build_ext --inplace
 python setup.py install
@@ -78,7 +78,7 @@ conda env create -f contact_graspnet_env.yml
 
 Required dependencies 설치
 
-# in contact-graspnet-pytorch folder
+//in contact-graspnet-pytorch folder
 
-# install package
+//install package
 pip install -e .
