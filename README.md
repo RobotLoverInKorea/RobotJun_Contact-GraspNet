@@ -1,11 +1,3 @@
-아래는 **가독성·디자인·목차 구성·코드 강조** 등을 모두 반영해 리뉴얼한 README.md 예시입니다.
-바로 복사/붙여넣기 해도 되도록 **Markdown 최적화** 형태로 제공했습니다.
-
----
-
-### ✔️ **리뉴얼된 README.md**
-
-```markdown
 # 🤖 RobotJun Contact-GraspNet Pipeline  
 > **Grounded-SAM2 + Contact-GraspNet 기반 파지점 추출 프로젝트**
 
@@ -154,20 +146,4 @@ conda env create -f (파일명).yml
 ### 🏷️ Footer
 
 이 프로젝트는 연구용 목적이며, 실시간 파지 지원·텔레오퍼레이션 시스템 개발을 목표로 합니다.
-
----
-
-```
-
----
-
-### ✨ 필요하면 추가해 드릴 수 있어요!
-
-📍 선택 옵션:
-- 파이프라인 이미지 제작 (PNG)
-- 데모 실행 GIF 삽입
-- Citation / BibTeX 추가
-- Korean + English 버전 멀티 README 제공
-
-원하는 옵션이 있으시면 알려주세요! 😄👍
 ```
