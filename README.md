@@ -102,3 +102,14 @@ Required dependencies 설치
 pip install -e .
 
 ```
+
+
+---
+
+## grdsam2 는 grounded sam2 코드가 돌아가게 만드는 가상환경 이고,
+## contact 는 contact graspnet 코드가 돌아가게 만드는 가상환경 이다.
+
+```
+conda env create -f (파일명).yml
+
+```
