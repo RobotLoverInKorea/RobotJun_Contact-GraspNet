@@ -1,8 +1,8 @@
 # RobotJun_Contact-GraspNet
 RobotJun 에서 기본 시작을 한다. grounded sam2 모델 이후 contact graspnet 파지점 추출을 나타낸다.
 
-
--Grounded-SAM2 환경 구성
+---
+Grounded-SAM2 환경 구성
 
 https://github.com/IDEA-Research/Grounded-SAM-2 공식 깃허브 자료를 참조한다.
 
