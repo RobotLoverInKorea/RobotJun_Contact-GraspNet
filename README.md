@@ -80,22 +80,23 @@ PY
 
 <https://github.com/elchun/contact_graspnet_pytorch> 참조
 
-''
+```
 git clone https://github.com/elchun/contact_graspnet_pytorch.git
-'''
+```
 
 conda 환경 구성
 
-'''
+```
 conda env create -f contact_graspnet_env.yml
-'''
+```
+
 
 Required dependencies 설치
 
-'''
+```
 //in contact-graspnet-pytorch folder
 
 //install package
 pip install -e .
 
-'''
+```
