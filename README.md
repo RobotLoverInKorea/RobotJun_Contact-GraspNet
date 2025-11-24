@@ -10,9 +10,9 @@ RobotJun 에서 기본 시작을 한다. grounded sam2 모델 이후 contact gra
 git clone https://github.com/IDEA-Research/Grounded-SAM-2.git
 ```
 
-https://github.com/IDEA-Research/Grounded-SAM-2
+---
 
-공식 깃 허브 다운로드 할때 생긴 이슈 정리
+### 공식 깃 허브 다운로드 할때 생긴 이슈 정리
 
 1. pip install --no-build-isolation -e grounding_dino 설치할때 error 발생
 
@@ -68,19 +68,27 @@ print("pkg:", pathlib.Path(groundingdino.__file__).parent)
 print("has _C:", hasattr(ms_deform_attn, "_C"))
 PY
 
--contact graspnet pytorch 환경구성
+---
++ contact graspnet pytorch 환경구성
 
-https://github.com/elchun/contact_graspnet_pytorch
+<https://github.com/elchun/contact_graspnet_pytorch> 참조
 
+''
 git clone https://github.com/elchun/contact_graspnet_pytorch.git
+'''
 
 conda 환경 구성
 
+'''
 conda env create -f contact_graspnet_env.yml
+'''
 
 Required dependencies 설치
 
+'''
 //in contact-graspnet-pytorch folder
 
 //install package
 pip install -e .
+
+'''
